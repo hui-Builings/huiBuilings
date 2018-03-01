@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../style.scss';
+import '../../assert/css/style.scss';
 
 class RightBar extends Component{
   render(){
