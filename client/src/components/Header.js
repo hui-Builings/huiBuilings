@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../assert/css/style.scss';
-import logo from '../assert/images/logo2.png';
+// import logo from '../assert/images/logo2.png';
 
 class Header extends Component{
 
