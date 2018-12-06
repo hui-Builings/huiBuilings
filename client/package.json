@@ -5,17 +5,29 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+<<<<<<< HEAD
+=======
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+>>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
     "react-scripts": "1.1.1"
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",
     "start": "npm run build-css && react-scripts start",
+<<<<<<< HEAD
     "build": "react-scripts build",
+=======
+>>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "antd": "^3.11.0",
+=======
+>>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6"
   }

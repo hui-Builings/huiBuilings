@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+$bgColor:#F3F3F3;
+$bgColor2:#ECECEC;
+$bgColor3:#676767;
+$bgColor4:#3C3C3C;
+$color:#fff;
+$borderColor:#F2F2F2;
+$fontColor:#BFBFBF;
+$fontColor2:#000000;
+$fontColor3:#ADA074;
+
+>>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
 body{
   width: 100%;
   height: 100%;
@@ -5,6 +18,7 @@ body{
   //font-style: Regular;
   letter-spacing: .1em;
 }
+<<<<<<< HEAD
 
 body,button,p,pre {
   margin: 0
@@ -161,10 +175,153 @@ $opBgColor:#E5F2FF;
             height: 30px;
             //padding-top: 11px;
           }
+=======
+a{
+  text-decoration: none;
+}
+
+.alls{
+  background: $bgColor4;
+  color: $color;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  left: 0;
+}
+
+/* header */
+.header {
+  width: 100%;
+  max-height: 600px;
+  .top{
+    width: 100%;
+    background: url("../images/bg_2.png") no-repeat center top;
+    background-size: 100%;
+    .top-con {
+      width: 100%;
+      height: 100%;
+      padding-top: 100px;
+      .logo{
+        padding: 10px;
+        border: 3px solid $color;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 0 auto 30px;
+        border-radius: 2px;
+        font-size: 30px;
+        transform: rotate(45deg);
+        span{
+        }
+      }
+      .name{
+        padding-top: 10px;
+        font-size: 25px;
+        color: $color;
+        span{
+          margin: 0 10px;
+        }
+      }
+      .line{
+        border-top:1px solid $color;
+        width:100px;
+        margin: 25px auto;
+      }
+      .contact{
+        font-size: 15px;
+        color: $color;
+      }
+      .follow{
+        width: 120px;
+        margin: 80px auto 30px;
+        padding: 8px 10px;
+        color: $color;
+        border:1px solid $color;
+      }
+      .up{
+        text-align: center;
+        color: $color;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  /*.bot {
+    height: 50px;
+    line-height: 50px;
+    .left {
+      width: 50%;
+      float: left;
+      text-align: left;
+      padding-left: 20px;
+      img {
+        height: 40px;
+        margin-top: 5px;
+      }
+    }
+    .right {
+      width: 45%;
+      float: right;
+      text-align: right;
+      span {
+        margin-right: 7px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }*/
+}
+
+/* footer */
+.footer{
+  @extend .alls;
+  bottom: 0;
+}
+
+.content{
+  //background: rgba($bgColor2 , .3);
+  //background: url(assert/bg.jpg) no-repeat center 5px;
+  width: 100%;
+  //height: calc(100% - 80px);
+  height: 579px;
+  clear: both;
+  .top-menu{
+    background: $color;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width:100%;
+    border-bottom: 1px solid $borderColor;
+    .top-all {
+      width: 85%;
+      margin: 0 auto;
+      .logo {
+        float: left;
+        padding-left: 20px;
+        font-weight: bold;
+      }
+      ul {
+        float: right;
+        width: 490px;
+        margin: 0 auto;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        li {
+          float: left;
+          list-style-type: none;
+          margin: 0 10px;
+          a {
+            color: $fontColor2;
+          }
+        }
+        li.active a{
+          color: $fontColor3;
+>>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
         }
       }
     }
   }
+<<<<<<< HEAD
 
   /*content*/
   .app-content{
@@ -558,13 +715,66 @@ $opBgColor:#E5F2FF;
               }
             }
           }
+=======
+  .right-bar{
+    .bar-menu {
+      ul {
+        width: 60px;
+        padding-top: 100px;
+        float: right;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        li {
+          background: $bgColor;
+          list-style-type: none;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 5px 0 0 5px;
+          margin-top: 10px;
+          border-right:5px solid $borderColor;
+          a {
+            text-decoration: none;
+            color: $color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .bar-bot{
+      position: absolute;
+      right: 10px;
+      bottom: 50px;
+      width: 100px;
+      height: 100px;
+      .bar-bor {
+        width: 88px;
+        height: 88px;
+        border: 2px solid $bgColor;
+        border-radius: 50%;
+        a {
+          display: block;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          line-height: 80px;
+          background: $bgColor3;
+          font-size: 30px;
+          color: $color;
+          border: 4px solid $bgColor4;
+          margin-left: 1px;
+>>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
         }
       }
     }
   }
+<<<<<<< HEAD
 
   /*footer*/
   .app-footer{
 
   }
 }
+=======
+}
+>>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
