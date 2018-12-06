@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url(assert/css/iconfont.css);
 @import url(~antd/dist/antd.css);
 body {
@@ -107,8 +106,7 @@ a {
           height: 52px; }
           .app .app-header > div .app-header-r .app-header-admin img {
             width: 30px;
-            height: 30px;
-            padding-top: 11px; }
+            height: 30px; }
   .app .app-content {
     width: 100%;
     min-height: 500px;
@@ -123,7 +121,7 @@ a {
       align-items: flex-start;
       position: relative;
       width: 1000px;
-      padding: 10px 16px;
+      padding: 10px 0;
       margin: 0 auto; }
       .app .app-content > div .app-content-main {
         width: 694px;
@@ -140,12 +138,12 @@ a {
               font-size: 16px;
               color: #1a1a1a;
               display: inline-block;
-              margin-right: 30px;
+              margin-right: 25px;
               line-height: 58px; }
               .app .app-content > div .app-content-main > div .app-content-main-header > div span {
                 cursor: pointer; }
                 .app .app-content > div .app-content-main > div .app-content-main-header > div span i {
-                  margin-right: 5px;
+                  margin: 0 5px;
                   color: #8590a6;
                   font-size: 16px;
                   font-weight: bold; }
@@ -630,25 +628,3 @@ input[type="text"], input[type="password"], input[type="number"], textarea {
 
 .thems {
   color: #1890FF; }
-=======
-.App {
-  text-align: center; }
-  .App .App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white; }
-    .App .App-header .App-title {
-      font-size: 1.5em; }
-    .App .App-header .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-      height: 80px; }
-  .App .App-intro {
-    font-size: large; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
->>>>>>> a2a9dbd9100a647bb18e5525b752b0419416cb66
