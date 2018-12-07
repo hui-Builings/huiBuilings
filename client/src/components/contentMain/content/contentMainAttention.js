@@ -46,3 +46,4 @@ export default class ContentMainAttention extends Component{
         )
     }
 }
+

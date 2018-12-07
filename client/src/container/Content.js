@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import ContentMain from '../components/contentBar/contentMain'
-import ContentRightBar from '../components/contentBar/contentRightBar'
+import { Route, Link } from 'react-router-dom';
+
+import ContentMainHome from "../components/contentMain/contentMainHome";
+import ContentMainDetailHome from "../components/contentDetail/contentDetailHome";
 
 /**
  * @author hui
@@ -12,17 +14,24 @@ export default class Content extends Component{
         super(props);
         super(props);
         this.state = {
-            menu:false
+            menu:false,
+            route:[
+                {path:'/home', component:ContentMainHome},
+                // {path:'/home/attention', component:ContentMainAttention},
+                {path:'/attention', component:ContentMainDetailHome},
+            ]
         }
     }
 
     render(){
         return (
             <div className="app-content">
-                <div>
-                    <ContentMain />
-                    <ContentRightBar />
-                </div>
+                {/*路由*/}
+                {
+                    this.state.route.map(item=>{
+                        return <Route key={item.path} exact={item.exact ? true:false} path={item.path} component={item.component}/>
+                    })
+                }
             </div>
         )
     }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Popover from '../common/popover';
-import img from '../../assert/images/admin.jpg'
-import itemImg from '../../assert/images/bg.jpg'
+import Popover from '../../common/popover';
+import img from '../../../assert/images/admin.jpg'
+import itemImg from '../../../assert/images/bg.jpg'
 
 /**
  * @author hui

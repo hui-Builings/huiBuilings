@@ -130,7 +130,8 @@ a {
           /*main header*/
           /*main special*/
           /*main attention*/
-          /*main item*/ }
+          /*main item*/
+          /*main item detail*/ }
           .app .app-content > div .app-content-main > div .app-content-main-header {
             height: 58px;
             padding: 0 20px; }
@@ -353,6 +354,104 @@ a {
                   line-height: 27px; }
             .app .app-content > div .app-content-main > div .app-content-main-list:hover .item-label .item-label-close {
               display: inline-block; }
+          .app .app-content > div .app-content-main > div .app-content-detail {
+            /*normal item*/ }
+            .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item {
+              position: relative;
+              padding: 16px 20px;
+              /*item label*/
+              /*item introduction*/
+              /*item text*/
+              /*item operation*/ }
+              .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-label {
+                color: #8590a6;
+                /*.item-label-title{
+                  &:before {
+                    content: "\FF0C";
+                  }
+                }*/ }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-label .item-label-close {
+                  float: right;
+                  margin-top: -10px;
+                  display: none; }
+                  .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-label .item-label-close i {
+                    font-size: 20px; }
+              .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-introduction {
+                margin: 8px 0; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-introduction img {
+                  width: 24px;
+                  height: 24px;
+                  margin-right: 10px;
+                  float: left; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-introduction span {
+                  line-height: 24px;
+                  font-size: 14px; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-introduction .item-name {
+                  font-weight: bold;
+                  color: #1a1a1a;
+                  font-size: 15px; }
+                  .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-introduction .item-name i {
+                    color: #0084FF;
+                    margin: 0 0 0 3px;
+                    font-size: 15px; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-introduction .item-des {
+                  color: #646464; }
+                  .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-introduction .item-des:before {
+                    content: "\FF0C"; }
+              .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-text {
+                clear: both; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-text .item-text-title {
+                  font-size: 17px;
+                  font-weight: bold;
+                  margin-bottom: 10px; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-text .item-text-con {
+                  margin-bottom: 10px; }
+                  .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-text .item-text-con p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical; }
+                    .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-text .item-text-con p:hover {
+                      color: #646464; }
+              .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op {
+                clear: both;
+                overflow: hidden; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-l {
+                  display: inline-block;
+                  float: left; }
+                  .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-l div {
+                    background: #E5F2FF;
+                    display: inline-block;
+                    padding: 3px 8px;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                    color: #0084FF;
+                    margin-right: 3px; }
+                    .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-l div .icon-op-up {
+                      margin-right: 5px; }
+                    .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-l div [class^=icon-] {
+                      font-size: 12px; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-r {
+                  display: inline-block;
+                  float: left;
+                  color: #8590a6;
+                  height: 27px;
+                  line-height: 28px; }
+                  .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-r span {
+                    margin: 0 15px; }
+                .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-more {
+                  float: right;
+                  cursor: pointer;
+                  line-height: 27px;
+                  height: 27px; }
+                  .app .app-content > div .app-content-main > div .app-content-detail .app-content-detail-item .item-op .item-op-more i {
+                    font-weight: bold;
+                    margin-left: 5px;
+                    vertical-align: middle; }
       .app .app-content > div .app-content-rightBar {
         width: 296px;
         -webkit-box-flex: 1;

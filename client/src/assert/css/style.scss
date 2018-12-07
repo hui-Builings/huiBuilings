@@ -481,8 +481,115 @@ $opBgColor:#E5F2FF;
               }
             }
           }
+
+          /*main item detail*/
+          .app-content-detail{
+            /*normal item*/
+            .app-content-detail-item{
+              position: relative;
+              padding: 16px 20px;
+
+              /*item label*/
+              .item-label{
+                color: $fontColor2;
+                .item-label-close{
+                  float: right;
+                  margin-top: -10px;
+                  display: none;
+                  i{
+                    font-size: 20px;
+                  }
+                }
+              }
+
+              /*item introduction*/
+              .item-introduction{
+                height: 40px;
+                img{
+                  width: 40px;
+                  height: 40px;
+                  margin-right: 10px;
+                  float: left;
+                }
+                span{
+                  line-height: 24px;
+                  font-size: 14px;
+                }
+                .item-name{
+                  font-weight: bold;
+                  color: $fontColor;
+                  font-size: 15px;
+                  i{
+                    color: $themsColor;
+                    margin: 0 0 0 3px;
+                    font-size: 15px;
+                  }
+                }
+                .item-des{
+                  color: $fontHoverColor;
+                }
+              }
+
+              /*item text*/
+              .item-text{
+                clear: both;
+                margin: 10px 0;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              /*item operation*/
+              .item-op{
+                clear: both;
+                overflow: hidden;
+                .item-op-l{
+                  display: inline-block;
+                  float: left;
+                  div{
+                    background: $opBgColor;
+                    display: inline-block;
+                    padding: 3px 8px;
+                    @include border-radius(3px);
+                    color: $themsColor;
+                    margin-right: 3px;
+                    .icon-op-up{
+                      margin-right: 5px;
+                    }
+                    [class^=icon-]{
+                      font-size: 12px;
+                    }
+                  }
+                }
+                .item-op-r{
+                  display: inline-block;
+                  float: left;
+                  color: $fontColor2;
+                  height: 27px;
+                  line-height: 28px;
+                  span{
+                    margin: 0 15px;
+                  }
+                }
+                .item-op-more{
+                  float: right;
+                  cursor: pointer;
+                  line-height: 27px;
+                  height: 27px;
+                  i{
+                    font-weight: bold;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                  }
+                }
+              }
+            }
+          }
         }
       }
+
+      /*main right bar*/
       .app-content-rightBar{
         width: 296px;
         -webkit-box-flex: 1;
@@ -559,6 +666,31 @@ $opBgColor:#E5F2FF;
                 }
               }
             }
+          }
+        }
+      }
+
+      /*detail right bar*/
+      .app-content-detail-rightBar{
+        width: 296px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        position: fixed;
+        right: calc((100% - 1000px)/2);
+        &>div{
+          .rightBar-intro{
+            padding: 20px 20px 8px 20px;
+            overflow: hidden;
+
+          }
+          .rightBar-live{
+
+          }
+          .rightBar-recommend{
+
+          }
+          .rightBar-question{
+
           }
         }
       }
