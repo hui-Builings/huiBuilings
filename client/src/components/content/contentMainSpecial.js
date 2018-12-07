@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import specialImg from '../../assert/images/special.jpg';
 
 /**
- * 2018/8/17 @hui
- * 专题
-*/
+ * @author hui
+ * @date 2018/8/15
+ * @Description: 左边主体/专题
+ */
 export default class ContentMainSpecial extends Component{
     constructor(props){
         super(props);

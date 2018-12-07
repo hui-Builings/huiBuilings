@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 /**
- * 2018/8/17 @hui
- * 关注问题
-*/
+ * @author hui
+ * @date 2018/8/15
+ * @Description: 左边主体/关注问题
+ */
 export default class ContentMainAttention extends Component{
     constructor(props){
         super(props);

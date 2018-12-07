@@ -5,9 +5,10 @@ import ContentMainAttention from '../content/contentMainAttention';    /*main at
 import ContentMainList from '../content/contentMainList';         /*main item*/
 
 /**
- * 2018/8/15 @hui
- * left main
- */
+ * @author hui
+ * @date 2018/8/15
+ * @Description: 左边主体 -> 专题/关注问题/列表 | 详情
+*/
 export default class ContentMain extends Component{
     constructor(props){
         super(props);

@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Menu, Dropdown, Icon } from 'antd';
 
 /**
- * 2018/8/15 @hui
- * 顶部操作
+ * @author hui
+ * @date 2018/8/15
+ * @Description: 顶部主体 -> 功能：提问，回答，写文章，写想法
  */
 export default class ContentMainHeader extends Component{
     constructor(props){

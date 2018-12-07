@@ -4,8 +4,9 @@ import img from '../../assert/images/admin.jpg'
 import itemImg from '../../assert/images/bg.jpg'
 
 /**
- * 2018/8/15 @hui
- * 数据列表
+ * @author hui
+ * @date 2018/8/15
+ * @Description: 左边主体/数据列表
  */
 export default class ContentMainList extends Component{
     constructor(props){

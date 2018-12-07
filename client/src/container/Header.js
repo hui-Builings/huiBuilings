@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-
 import img from '../assert/images/admin.jpg'
+
+/**
+ * @author hui
+ * @date 2018/8/15
+ * @Description: 头部
+ */
 export default class Header extends Component{
     constructor(props){
         super(props);

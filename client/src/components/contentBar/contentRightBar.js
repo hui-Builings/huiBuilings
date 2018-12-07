@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 /**
- * 2018/8/15 @hui
- * right bar
+ * @author hui
+ * @date 2018/8/15
+ * @Description: 右边主体
  */
 export default class ContentRightBar extends Component{
     constructor(props){

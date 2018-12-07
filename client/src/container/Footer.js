@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+/**
+ * @author hui
+ * @date 2018/8/10
+ * @Description: 底部
+ */
 class Footer extends Component{
 
   render(){
