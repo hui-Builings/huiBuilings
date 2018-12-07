@@ -9,28 +9,22 @@ export default class ContentDetailHeader extends Component{
     constructor(props){
         super(props);
         this.state = {
-            tags:[]
+            tags:['vue','react','typescript','html'],
+            colors:['magenta','red','volcano','orange','gold','lime','green','cyan','blue','geekblue','purple']
         }
     }
 
   render(){
+        const { tags, colors } = this.state;
         const question = <div className="title">
             <h4>如何练习前端技术？</h4>
             <p>书籍方面已经看的很多了，但是缺少实际的经验。请问大家当初是如何练习提高的？</p>
         </div>;
 
-        const tags = <div className="tags">
-            <Tag color="magenta">magenta</Tag>
-            <Tag color="red">red</Tag>
-            <Tag color="volcano">volcano</Tag>
-            <Tag color="orange">orange</Tag>
-            <Tag color="gold">gold</Tag>
-            <Tag color="lime">lime</Tag>
-            <Tag color="green">green</Tag>
-            <Tag color="cyan">cyan</Tag>
-            <Tag color="blue">blue</Tag>
-            <Tag color="geekblue">geekblue</Tag>
-            <Tag color="purple">purple</Tag>
+        const tag = <div className="tags">
+            {tags.map((item,index) =>{
+                 return <Tag color={colors[index]}>{item}</Tag>
+            })}
         </div>;
       return (
       <div className="app-content-detail-header">
@@ -50,7 +44,7 @@ export default class ContentDetailHeader extends Component{
               </Tooltip>
 
               {/*标签*/}
-              <Tooltip placement="left" title={tags}>
+              <Tooltip placement="left" title={tag}>
                 <p><span><Icon type="tags" /></span></p>
               </Tooltip>
 
