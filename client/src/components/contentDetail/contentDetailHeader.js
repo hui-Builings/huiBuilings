@@ -27,38 +27,38 @@ export default class ContentDetailHeader extends Component{
             })}
         </div>;
       return (
-      <div className="app-content-detail-header">
-          <Button type="primary">关注问题</Button>
-          <Button type="primary" ghost><Icon type="edit" />写回答</Button>
-          <div className="detail-r">
-              <span><i className="icon-op-pl"></i>4条评论</span>
-              <span><i className="icon-op-fx"></i>分享</span>
-              <span><i className="icon-like"></i>收藏</span>
-              <span><i className="icon-op-jb"></i>举报</span>
-              <span><i className="icon-op-sl"></i></span>
+          <div className="app-content-detail-header">
+              <Button type="primary">关注问题</Button>
+              <Button type="primary" ghost><Icon type="edit" />写回答</Button>
+              <div className="detail-r">
+                  <span><i className="icon-op-pl"></i>4条评论</span>
+                  <span><i className="icon-op-fx"></i>分享</span>
+                  <span><i className="icon-like"></i>收藏</span>
+                  <span><i className="icon-op-jb"></i>举报</span>
+                  <span><i className="icon-op-sl"></i></span>
+              </div>
+              <div className="detail-opear">
+                  {/*问题*/}
+                  <Tooltip placement="left" title={question}>
+                      <p><span><Icon type="contacts" /></span></p>
+                  </Tooltip>
+
+                  {/*标签*/}
+                  <Tooltip placement="left" title={tag}>
+                    <p><span><Icon type="tags" /></span></p>
+                  </Tooltip>
+
+                  {/*关注人数*/}
+                  <Tooltip placement="left" title={<span>945</span>}>
+                    <p><span><Icon type="heart" /></span></p>
+                  </Tooltip>
+
+                  {/*浏览人数*/}
+                  <Tooltip placement="left" title={<span>63,691</span>}>
+                    <p><span><Icon type="usergroup-add" /></span></p>
+                  </Tooltip>
+              </div>
           </div>
-          <div className="detail-opear">
-              {/*问题*/}
-              <Tooltip placement="left" title={question}>
-                  <p><span><Icon type="contacts" /></span></p>
-              </Tooltip>
-
-              {/*标签*/}
-              <Tooltip placement="left" title={tag}>
-                <p><span><Icon type="tags" /></span></p>
-              </Tooltip>
-
-              {/*关注人数*/}
-              <Tooltip placement="left" title={<span>945</span>}>
-                <p><span><Icon type="heart" /></span></p>
-              </Tooltip>
-
-              {/*浏览人数*/}
-              <Tooltip placement="left" title={<span>63,691</span>}>
-                <p><span><Icon type="usergroup-add" /></span></p>
-              </Tooltip>
-          </div>
-      </div>
-    )
+      )
   }
 }
