@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ContentMainHeader from './contentMainHeader';     /*main header*/
-import ContentMainSpecial from './contentMainSpecial';      /*main special*/
-import ContentMainAttention from './contentMainAttention';    /*main attention*/
-import ContentMainList from './contentMainList';         /*main item*/
+import ContentMainHeader from '../contentBar/contentMainHeader';     /*main header*/
+import ContentMainSpecial from '../content/contentMainSpecial';      /*main special*/
+import ContentMainAttention from '../content/contentMainAttention';    /*main attention*/
+import ContentMainList from '../content/contentMainList';         /*main item*/
 
 /**
  * 2018/8/15 @hui
@@ -23,9 +23,18 @@ export default class ContentMain extends Component{
               <ContentMainHeader />
           </div>
           <div className="">
+              {/*专题*/}
               <ContentMainSpecial />
+
+              {/*关注问题*/}
               <ContentMainAttention />
+
+              {/*列表*/}
               <ContentMainList />
+          </div>
+
+          <div>
+              {/*详情*/}
           </div>
       </div>
     )

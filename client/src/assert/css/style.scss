@@ -98,6 +98,7 @@ $opBgColor:#E5F2FF;
       line-height: 52px;
       background: $bgColor;
       margin:0 auto;
+      padding: 0 10px;
       text-align: left;
       /*transition: -webkit-transform .3s;
       transition: transform .3s;
@@ -109,6 +110,7 @@ $opBgColor:#E5F2FF;
       .app-header-logo{
         padding-top: 10px;
         margin-right: 20px;
+        height: 52px;
       }
       .app-header-li{
         span{

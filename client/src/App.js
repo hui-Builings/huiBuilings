@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './assert/css/app.scss';
 import Header from "./container/Header";
 import Content from "./container/Content";
 

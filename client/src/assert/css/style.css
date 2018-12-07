@@ -55,6 +55,7 @@ a {
       line-height: 52px;
       background: #fff;
       margin: 0 auto;
+      padding: 0 10px;
       text-align: left;
       /*transition: -webkit-transform .3s;
       transition: transform .3s;
@@ -64,7 +65,8 @@ a {
         float: left; }
       .app .app-header > div .app-header-logo {
         padding-top: 10px;
-        margin-right: 20px; }
+        margin-right: 20px;
+        height: 52px; }
       .app .app-header > div .app-header-li span {
         display: inline-block;
         width: 60px;

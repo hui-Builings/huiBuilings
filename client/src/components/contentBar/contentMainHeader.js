@@ -19,8 +19,8 @@ export default class ContentMainHeader extends Component{
       const { menu, activeMenu }  = this.state;
       const menuList = (
           <Menu>
-              {menu.filter(item => item != activeMenu).map(itemT =>{
-                  return <Menu.Item onClick={()=>this.setState({activeMenu:itemT})}><Icon type="tag" /><span>{itemT}</span></Menu.Item>
+              {menu.filter(item => item !== activeMenu).map(itemT =>{
+                  return <Menu.Item key={itemT} onClick={()=>this.setState({activeMenu:itemT})}><Icon type="tag" /><span>{itemT}</span></Menu.Item>
               })}
           </Menu>
       );
