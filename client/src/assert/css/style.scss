@@ -1,33 +1,4 @@
-body{
-  width: 100%;
-  height: 100%;
-  font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
-  //font-style: Regular;
-  letter-spacing: .1em;
-}
 
-body,button,p,pre {
-  margin: 0
-}
-
-h1,h2,h3 {
-  margin: 0;
-  font: inherit
-}
-
-ol,ul {
-  padding: 0;
-  margin: 0
-}
-
-li {
-  list-style-type: none
-}
-
-a {
-  color: inherit;
-  text-decoration: none
-}
 
 /*product style*/
 $bgColor:#fff;
@@ -40,10 +11,23 @@ $fontColor2:#8590a6;
 $fontHoverColor:#646464;
 $fontColor3: #175199;
 
+$fontSize:14px;
+$fontSize6:16px;
+$fontSize8:18px;
+$fontSize20:20px;
+
 $themsColor:#0084FF;
 $btnBgColor:rgba(0,132,255,.1);
 
 $opBgColor:#E5F2FF;
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
 
 .div-hide{
   display: none;
@@ -72,6 +56,12 @@ $opBgColor:#E5F2FF;
   display: -webkit-box;
   -webkit-line-clamp: $num;
   -webkit-box-orient: vertical;
+}
+
+@mixin box{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .app{
@@ -175,9 +165,7 @@ $opBgColor:#E5F2FF;
     background: $bgColor2;
     margin-top: 52px;
     &>div{
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      @include box;
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
@@ -482,6 +470,51 @@ $opBgColor:#E5F2FF;
             }
           }
 
+          /*main item detail header*/
+          .app-content-detail-header{
+            padding:10px;
+            .ant-btn{
+              margin-right: 10px;
+            }
+            .detail-r{
+              float: right;
+              color: $fontColor2;
+              height: 32px;
+              line-height: 32px;
+              span{
+                margin: 0 15px;
+              }
+            }
+            .detail-opear{
+              position: absolute;
+              left: -50px;
+              top: 300px;
+              p{
+                width: 40px;
+                height: 40px;
+                line-height: 45px;
+                background: $bgColor;
+                margin-bottom: 10px;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                  background:$themsColor;
+                  span{
+                    .anticon{
+                      color: $bgColor;
+                    }
+                  }
+                }
+                @include border-radius(2px);
+                span{
+                  .anticon{
+                    color: $fontColor2;
+                    font-size: $fontSize20;
+                  }
+                }
+              }
+            }
+          }
           /*main item detail*/
           .app-content-detail{
             /*normal item*/
@@ -589,6 +622,20 @@ $opBgColor:#E5F2FF;
         }
       }
 
+      /*attention list*/
+      .app-content-attention{
+        .attention-item{
+
+        }
+      }
+
+      /*hot list*/
+      .app-content-hot{
+        .hot-item{
+
+        }
+      }
+
       /*main right bar*/
       .app-content-rightBar{
         width: 296px;
@@ -675,22 +722,135 @@ $opBgColor:#E5F2FF;
         width: 296px;
         -webkit-box-flex: 1;
         -ms-flex: 1;
-        position: fixed;
-        right: calc((100% - 1000px)/2);
         &>div{
-          .rightBar-intro{
-            padding: 20px 20px 8px 20px;
+          &>div{
             overflow: hidden;
-
+            .rightBar-title{
+              height: 40px;
+              line-height: 40px;
+              padding: 0 10px;
+              font-weight: bold;
+              border-bottom: 1px solid $borderColor;
+            }
+          }
+          .rightBar-intro{
+            .rightBar-intro-div{
+              margin: 10px;
+            }
+            .rightBar-intro-top{
+              height: 70px;
+              border-bottom: 1px solid $borderColor;
+              img{
+                width: 50px;
+                height: 50px;
+                float: left;
+              }
+              div{
+                margin-left: 15px;
+                padding-top: 5px;
+                float: left;
+                .name{
+                  font-size: $fontSize8;
+                }
+                .intro{
+                  font-size: $fontSize;
+                  color: $fontColor2;
+                }
+              }
+            }
+            .rightBar-intro-bot{
+              clear: both;
+              @include box;
+              div{
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                p{
+                  text-align: center;
+                  font-size: $fontSize;
+                  color: $fontColor2;
+                  &:last-child{
+                    font-size: $fontSize8;
+                    font-weight: bold;
+                    color: $fontColor;
+                  }
+                }
+              }
+            }
+            .rightBar-intro-btn{
+              margin: 10px auto;
+              text-align: center;
+              .ant-btn{
+                margin: 0 10px;
+                padding: 0 20px;
+              }
+            }
           }
           .rightBar-live{
-
+            .rightBar-live-li{
+              width: calc(100% - 20px);
+              margin: 0 10px;
+              padding: 5px 0;
+              height: 60px;
+              line-height: 25px;
+              border-bottom: 1px solid $borderColor;
+              p{
+                color: #175199;
+                span{
+                  margin-right: 10px;
+                }
+                &:first-child{
+                  span:last-child{
+                    float: right;
+                    margin-right: 0;
+                    color: $fontColor2;
+                  }
+                }
+              }
+            }
           }
           .rightBar-recommend{
-
+            .rightBar-recommend-li{
+              @include box;
+              margin: 0 10px;
+              padding: 10px 0;
+              border-bottom: 1px solid $borderColor;
+              &:last-child{
+                border-bottom: none;
+              }
+              img{
+                width: 80px;
+                height: 65px;
+                @include border-radius(2px);
+              }
+              .rightBar-recommend-li-r{
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                padding-left: 10px;
+                p{
+                  &:first-child{
+                    color: $fontColor;
+                    font-weight: 600;
+                    line-height: 18px;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+            }
           }
           .rightBar-question{
-
+            .rightBar-question-li{
+              margin-bottom: 10px;
+              padding: 0 10px;
+              color: #175199;
+              &:last-child{
+                border-bottom: none;
+              }
+              span{
+                color: $fontColor2;
+              }
+            }
           }
         }
       }

@@ -8,7 +8,6 @@ import React, { Component } from 'react';
 export default class ContentRightBar extends Component{
     constructor(props){
         super(props);
-        super(props);
         this.state = {
         }
     }

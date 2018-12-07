@@ -10,7 +10,6 @@ import itemImg from '../../assert/images/bg.jpg'
 export default class ContentMainDetail extends Component{
     constructor(props){
         super(props);
-        super(props);
         this.state = {
             //问题详情简介
             mainData:[],

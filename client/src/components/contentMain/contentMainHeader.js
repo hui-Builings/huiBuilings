@@ -9,7 +9,6 @@ import { Menu, Dropdown, Icon } from 'antd';
 export default class ContentMainHeader extends Component{
     constructor(props){
         super(props);
-        super(props);
         this.state = {
             menu:['关注','推荐','热榜'],
             activeMenu:'推荐'

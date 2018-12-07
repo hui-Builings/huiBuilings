@@ -12,7 +12,6 @@ import ContentMainDetailHome from "../components/contentDetail/contentDetailHome
 export default class Content extends Component{
     constructor(props){
         super(props);
-        super(props);
         this.state = {
             menu:false,
             route:[

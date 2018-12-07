@@ -14,7 +14,6 @@ import ContentMainList from './content/contentMainList';              /*main ite
 export default class ContentMainHome extends Component{
     constructor(props){
         super(props);
-        super(props);
         this.state = {
         }
     }

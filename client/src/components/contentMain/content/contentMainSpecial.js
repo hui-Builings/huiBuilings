@@ -9,7 +9,6 @@ import specialImg from '../../../assert/images/special.jpg';
 export default class ContentMainSpecial extends Component{
     constructor(props){
         super(props);
-        super(props);
         this.state = {
         }
     }
