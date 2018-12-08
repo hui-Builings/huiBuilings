@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
+import Login from './Login'
 import ContentMainHome from "../components/contentMain/contentMainHome";
 import ContentMainDetailHome from "../components/contentDetail/contentDetailHome";
 
@@ -15,6 +16,7 @@ export default class Content extends Component{
         this.state = {
             menu:false,
             route:[
+                {path:'/login', component:Login},
                 {path:'/home', component:ContentMainHome},
                 // {path:'/home/attention', component:ContentMainAttention},
                 {path:'/attention', component:ContentMainDetailHome},

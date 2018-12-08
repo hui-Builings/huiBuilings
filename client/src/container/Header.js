@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { Menu } from 'antd'
 import img from '../assert/images/admin.jpg'
+import { withRouter } from 'react-router-dom';
 
 /**
  * @author hui
  * @date 2018/8/15
  * @Description: 头部
  */
+@withRouter
 export default class Header extends Component{
     constructor(props){
         super(props);
@@ -14,7 +17,15 @@ export default class Header extends Component{
         }
     }
   render(){
-    return (
+      const login = (
+          <Menu>
+              <Menu.Item>
+                  <span onClick={()=>this.props.history.push('/login')}>登录</span>
+              </Menu.Item>
+          </Menu>
+      );
+
+      return (
       <div className="app-header">
           <div>
               <div className="app-header-logo">
@@ -52,6 +63,7 @@ export default class Header extends Component{
                   </div>
                   <div className="app-header-admin">
                       <img src={img} alt=""/>
+
                   </div>
               </div>
           </div>
