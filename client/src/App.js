@@ -9,6 +9,7 @@ import Content from "./container/Content";
  * @Description: 入口
  */
 export default class App extends Component {
+<<<<<<< HEAD
   render() {
     return (
       <div className="app">
@@ -17,4 +18,14 @@ export default class App extends Component {
       </div>
     );
   }
+=======
+    render() {
+        return (
+            <div className="app">
+                <Header />
+                <Content />
+            </div>
+        );
+    }
+>>>>>>> 调整
 }

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Menu } from 'antd'
+=======
+import { Menu,Dropdown } from 'antd'
+>>>>>>> 调整
 import img from '../assert/images/admin.jpg'
 import { withRouter } from 'react-router-dom';
 
@@ -9,7 +13,11 @@ import { withRouter } from 'react-router-dom';
  * @Description: 头部
  */
 @withRouter
+<<<<<<< HEAD
 export default class Header extends Component{
+=======
+class Header extends Component{
+>>>>>>> 调整
     constructor(props){
         super(props);
         this.state={
@@ -40,7 +48,11 @@ export default class Header extends Component{
                 </svg>
               </div>
               <div className="app-header-li">
+<<<<<<< HEAD
                   <span className="active">首页</span>
+=======
+                  <span className="active" onClick={()=>this.props.history.push('/home')}>首页</span>
+>>>>>>> 调整
                   <span>发现</span>
                   <span>话题</span>
               </div>
@@ -62,12 +74,24 @@ export default class Header extends Component{
                       </span>
                   </div>
                   <div className="app-header-admin">
+<<<<<<< HEAD
                       <img src={img} alt=""/>
 
+=======
+                      <Dropdown overlay={login}>
+                          <img src={img} alt=""/>
+                      </Dropdown>
+>>>>>>> 调整
                   </div>
               </div>
           </div>
       </div>
     )
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+export default Header;
+>>>>>>> 调整
