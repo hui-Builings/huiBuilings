@@ -18,10 +18,6 @@ export default class Login extends Component{
       <div className="app-login">
           <div>
               登录页
-<<<<<<< HEAD
-
-=======
->>>>>>> 调整
           </div>
       </div>
     )

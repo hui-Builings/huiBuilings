@@ -1,28 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "hui-builings",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
-  },
-  "scripts": {
-    "build-css": "node-sass src/ -o src/",
-    "start": "npm run build-css && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "antd": "^3.11.0",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6"
-=======
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -155,6 +131,5 @@
       ["@babel/plugin-proposal-decorators", { "legacy": true }],
       ["@babel/plugin-proposal-class-properties", { "loose" : true }]
     ]
->>>>>>> 调整
   }
 }

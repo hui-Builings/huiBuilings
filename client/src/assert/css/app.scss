@@ -1,6 +1,5 @@
-@import "./iconfont.css";
+//@import "./iconfont.css";
 @import "./style.scss";
-@import '~antd/dist/antd.css';
 
 [class^=icon-] {
   font-family: "iconfont" !important;
@@ -42,6 +41,10 @@ li {
 a {
   color: inherit;
   text-decoration: none
+}
+
+p {
+  margin-bottom: 0 !important;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
