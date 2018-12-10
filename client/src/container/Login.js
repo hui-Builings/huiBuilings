@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img from '../assert/images/admin.jpg'
+// import img from '../assert/images/admin.jpg'
 
 /**
  * @author hui

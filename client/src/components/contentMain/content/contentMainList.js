@@ -3,12 +3,15 @@ import Popover from '../../../common/popover';
 import img from '../../../assert/images/admin.jpg'
 import itemImg from '../../../assert/images/bg.jpg'
 
+import { withRouter } from 'react-router-dom'
+
 /**
  * @author hui
  * @date 2018/8/15
  * @Description: 左边主体/数据列表
  */
-export default class ContentMainList extends Component{
+@withRouter
+class ContentMainList extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -84,7 +87,7 @@ export default class ContentMainList extends Component{
                       classNames="app-card app-content-main-list-item img-item";
                   }
                   return (
-                      <div className={classNames} key={index}>
+                      <div className={classNames} key={index} onClick={()=>this.props.history.push(`/home/recommend/detail/:${index}`)}>
                           <div className="item-label">
                               <span>{item.label.label}: </span>
                               <span className="item-label-title">{item.label.title}</span>
@@ -311,3 +314,4 @@ export default class ContentMainList extends Component{
     )
   }
 }
+export default ContentMainList

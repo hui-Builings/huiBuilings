@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
 
 import ContentRightBar from './contentRightBar'                       /*main rightbar*/
 import ContentMainHeader from './contentMainHeader';                  /*main header*/
@@ -11,7 +12,8 @@ import ContentMainList from './content/contentMainList';              /*main ite
  * @date 2018/8/15
  * @Description: 左边主体 -> 专题/关注问题/列表  | 右边主体 -> 菜单
 */
-export default class ContentMainHome extends Component{
+@withRouter
+class ContentMainHome extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -23,7 +25,7 @@ export default class ContentMainHome extends Component{
         <div>
             <div className="app-content-main">
                 <div className="app-card">
-                    <ContentMainHeader />
+                    <ContentMainHeader name={this.props.name}/>
                 </div>
 
                 <div className="">
@@ -44,3 +46,4 @@ export default class ContentMainHome extends Component{
     )
   }
 }
+export default ContentMainHome

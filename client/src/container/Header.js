@@ -40,7 +40,7 @@ class Header extends Component{
                 </svg>
               </div>
               <div className="app-header-li">
-                  <span className="active" onClick={()=>this.props.history.push('/home')}>首页</span>
+                  <span className="active" onClick={()=>this.props.history.push('/home/recommend')}>首页</span>
                   <span>发现</span>
                   <span>话题</span>
               </div>
