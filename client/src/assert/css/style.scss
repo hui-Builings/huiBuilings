@@ -96,9 +96,13 @@ $opBgColor:#E5F2FF;
         float: left;
       }
       .app-header-logo{
-        padding-top: 10px;
+        //padding-top: 10px;
         margin-right: 20px;
         height: 52px;
+        span{
+          font-size: $fontSize20;
+          font-weight: 600;
+        }
       }
       .app-header-li{
         span{

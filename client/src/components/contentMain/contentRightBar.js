@@ -50,8 +50,7 @@ export default class ContentRightBar extends Component{
                       </span>
                   </p>
                   <p><span><i className="icon-bar-edit"></i>我的草稿</span></p>
-                  <p><span><i className="icon-bar-sq"></i>社区服务中心</span></p>
-                  <p><span><i className="icon-bar-bq"></i>版权服务中心</span></p>
+                  <p><span><i className="icon-bar-sq"></i>我的审核</span></p>
               </div>
           </div>
       </div>
