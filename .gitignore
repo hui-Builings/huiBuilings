@@ -1,3 +1,5 @@
 /.idea/
 /client/node_modules/
 /dist/
+/client/src/assert/css/app.css
+/client/src/assert/css/app.css.map

@@ -23,7 +23,7 @@ class ContentMainList extends Component{
                 introduction:{
                     img:img,
                     name:'方应杭',
-                    text:'微信 xiedaimala02，公众号 XDML，暗号：知乎'
+                    text:'微信 xiedaimala02，公众号 XDML，暗号：暖'
                 },
                 texts:{
                     title:'如何正确理解前后端分离?',
@@ -190,7 +190,7 @@ class ContentMainList extends Component{
               <div className="item-introduction">
                   <img src={img} alt=""/>
                   <span className="item-name">方应杭</span>
-                  <span className="item-des">，微信 xiedaimala02，公众号 XDML，暗号：知乎</span>
+                  <span className="item-des">，微信 xiedaimala02，公众号 XDML，暗号：暖</span>
               </div>
               <div className="item-text">
                   <p className="item-text-title">如何正确理解前后端分离?</p>
@@ -237,7 +237,7 @@ class ContentMainList extends Component{
                   <img src={img} alt=""/>
                   <span className="item-name">方应杭</span>
                   <span className="item-renz">认证</span>
-                  <span className="item-des">，微信 xiedaimala02，公众号 XDML，暗号：知乎</span>
+                  <span className="item-des">，微信 xiedaimala02，公众号 XDML，暗号：暖</span>
               </div>
               <div className="item-text">
                   <p className="item-text-title">如何正确理解前后端分离?</p>
@@ -280,7 +280,7 @@ class ContentMainList extends Component{
                   <img src={img} alt=""/>
                   <span className="item-name">方应杭</span>
                   <span className="item-renz">认证</span>
-                  <span className="item-des">，微信 xiedaimala02，公众号 XDML，暗号：知乎</span>
+                  <span className="item-des">，微信 xiedaimala02，公众号 XDML，暗号：暖</span>
               </div>
               <div className="item-text">
                   <p className="item-text-title">如何正确理解前后端分离?</p>
