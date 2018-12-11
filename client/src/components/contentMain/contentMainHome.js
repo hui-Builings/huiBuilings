@@ -13,50 +13,47 @@ import contentMainHot from './hot/contentMainHot';
  * @date 2018/8/15
  * @Description: 头部主体 | 左边主体 -> 专题/关注问题/列表  | 右边主体 -> 菜单
 */
-// @withRouter
+@withRouter
 class ContentMainHome extends Component{
     constructor(props){
         super(props);
         this.state = {
             routeMain:[
                 //首页-推荐
-                {path:'/recommend', component:contentMainRecommend, name:'推荐'},
-
+                {path:'/recommend', component:contentMainRecommend},
                 //关注
-                {path:'/attention', component:ContentMainAttention, name:'关注'},
+                {path:'/attention', component:ContentMainAttention},
                 //热榜
-                {path:'/hot', component:contentMainHot, name:'热榜'},
+                {path:'/hot', component:contentMainHot},
 
             ]
         }
     }
 
   render(){
-    return (
-        <div>
-            <div className="app-content-main">
-                <div className="app-card">
-                    {/*头部*/}
-                    <ContentMainHeader name={this.props.name}/>
+        return (
+            <div>
+                <div className="app-content-main">
+                    <div className="app-card">
+                        {/*头部*/}
+                        <ContentMainHeader name={this.props.name}/>
+                    </div>
+
+                    {/*内容*/}
+                    {this.state.routeMain.map(item=>{
+                        return <Route
+                                    key={item.path}
+                                    exact={item.exact ? true:false}
+                                    path={item.path}
+                                    component={item.component}
+                                />
+                    })}
                 </div>
 
-                {/*内容*/}
-                {this.state.routeMain.map(item=>{
-                    return <Route
-                                key={item.path}
-                                exact={item.exact ? true:false}
-                                path={item.path}
-                                component={item.component}
-                                name={item.name}
-                            />
-                })}
+                {/*右侧*/}
+                <ContentRightBar />
             </div>
-
-            {/*右侧*/}
-            <ContentRightBar />
-        </div>
-
-    )
+        )
   }
 }
 export default ContentMainHome

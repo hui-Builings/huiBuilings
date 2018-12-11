@@ -20,14 +20,14 @@ class ContentRouterSwitch extends Component{
                 {path:'/login', component:Login},
 
                 //首页-推荐
-                {path:'/recommend', component:ContentMainHome, name:'推荐'},
+                {path:'/recommend', component:ContentMainHome},
                 //关注
-                {path:'/attention', component:ContentMainHome, name:'关注'},
+                {path:'/attention', component:ContentMainHome},
                 //热榜
-                {path:'/hot', component:ContentMainHome, name:'热榜'},
+                {path:'/hot', component:ContentMainHome},
 
                 //推荐-详情
-                {path:'/question/detail/:id', component:ContentMainDetailHome, name:'详情'},
+                {path:'/question/detail/:id', component:ContentMainDetailHome},
             ]
         }
     }
@@ -47,7 +47,6 @@ class ContentRouterSwitch extends Component{
                                                 exact={item.exact ? true:false}
                                                 path={item.path}
                                                 component={item.component}
-                                                name={item.name}
                                             />
                             })}
                         </Switch>

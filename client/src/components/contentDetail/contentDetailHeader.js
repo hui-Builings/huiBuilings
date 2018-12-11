@@ -23,7 +23,7 @@ export default class ContentDetailHeader extends Component{
 
         const tag = <div className="tags">
             {tags.map((item,index) =>{
-                 return <Tag color={colors[index]}>{item}</Tag>
+                 return <Tag color={colors[index]} key={index}>{item}</Tag>
             })}
         </div>;
       return (
