@@ -46,7 +46,40 @@ $dangerColor:#EC3C45;
   white-space: nowrap;
 }
 
-/*theme style*/
+/* antd ************************************************************************************************************/
+/*tooltip*/
+.ant-tooltip-content{
+  .ant-tooltip-arrow {
+    //border-right-color:$bgColor;
+  }
+  .ant-tooltip-inner {
+    color: $fontColor;
+    background-color: $bgColor;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    .title{
+      padding: 10px;
+      h4{
+        font-weight: 600;
+        font-size: $fontSize6;
+      }
+    }
+    .tags{
+      margin-top: 8px;
+      padding-left: 10px;
+      .ant-tag{
+        margin-bottom: 8px;
+
+        padding: 0 10px;
+        line-height: 28px;
+        height: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* theme style *****************************************************************************************************/
 /*btn*/
 .app-btn{
   line-height: 1.5;
@@ -94,6 +127,18 @@ button[type='danger']{
 input[type="text"], input[type="password"], input[type="number"], textarea {
   -webkit-appearance: none;
 }
+
+/*card*/
+.app-card {
+  margin-bottom: 10px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  box-sizing: border-box;
+}
+
+/*input*/
 .app-input {
   font-family: "Monospaced Number", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-box-sizing: border-box;
@@ -183,16 +228,6 @@ input[type="text"], input[type="password"], input[type="number"], textarea {
   }
 }
 
-/*card*/
-.app-card {
-  margin-bottom: 10px;
-  background: #fff;
-  overflow: hidden;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(26,26,26,.1);
-  box-sizing: border-box;
-}
-
 /*popver*/
 .app-popover-hidden{
   display: none;
@@ -265,43 +300,37 @@ input[type="text"], input[type="password"], input[type="number"], textarea {
   }
 }
 
-.ant-tooltip-content{
-  .ant-tooltip-arrow {
-    //border-right-color:$bgColor;
-  }
-  .ant-tooltip-inner {
-     color: $fontColor;
-     background-color: $bgColor;
-     -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    .title{
-      padding: 10px;
-      h4{
-        font-weight: 600;
-        font-size: $fontSize6;
-      }
-    }
-    .tags{
-      margin-top: 8px;
-      padding-left: 10px;
-      .ant-tag{
-        margin-bottom: 8px;
-
-        padding: 0 10px;
-        line-height: 28px;
-        height: 30px;
-        text-align: center;
-      }
-    }
-  }
+/* mask */
+.app-mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(26,26,26,.65);
+  z-index: 999;
 }
 
-
-/*common style*/
+/* common style *****************************************************************************************************/
 .ib{
   display: inline-block;
 }
 
 .thems{
   color:$primaryColor;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.div-hide{
+  display: none;
+}
+.div-show{
+  display: inline-block;
 }

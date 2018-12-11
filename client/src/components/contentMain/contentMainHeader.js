@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Dropdown, Icon } from 'antd';
 import { withRouter } from 'react-router-dom'
-import contentMainHot from "./hot/contentMainHot";
-import ContentMainAttention from "./attention/contentMainAttention";
-import contentMainRecommend from "./recommend/contentMainRecommend";
 
 /**
  * @author hui

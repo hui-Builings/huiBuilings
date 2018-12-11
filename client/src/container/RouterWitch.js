@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Switch,Route } from 'react-router-dom';
 
-import Login from "./Login";
 import Header from "./Header";
+import Login from "./Login";
+
 import ContentMainHome from "../components/contentMain/contentMainHome";
 import ContentMainDetailHome from "../components/contentDetail/contentDetailHome";
+import MyDetail from "../components/my/MyDetail";
 
 /**
  * @author hui
@@ -16,8 +18,8 @@ class ContentRouterSwitch extends Component{
         super(props);
         this.state = {
             route:[
-                //登录
-                {path:'/login', component:Login},
+                //我的
+                {path:'/myDetail', component:MyDetail},
 
                 //首页-推荐
                 {path:'/recommend', component:ContentMainHome},
@@ -32,11 +34,14 @@ class ContentRouterSwitch extends Component{
         }
     }
 
+
+
     render(){
-        // const { pathname } = this.props.location;
         return (
-            <div>
-                <Header />
+            <div className=''>
+                {/*header*/}
+                <Header/>
+
                 <div className="app-content">
                     <div className='app-router'>
                         {/*路由*/}
