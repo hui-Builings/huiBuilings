@@ -41,7 +41,7 @@ class Header extends Component{
                 <span>Builings</span>
               </div>
               <div className="app-header-li">
-                  <span className="active" onClick={()=>this.props.history.push('/home/recommend')}>首页</span>
+                  <span className="active" onClick={()=>this.props.history.push('/recommend')}>首页</span>
                   <span>发现</span>
                   <span>话题</span>
               </div>

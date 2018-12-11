@@ -20,11 +20,11 @@ class ContentMainHeader extends Component{
     checkRouter = (item)=>{
         let path = '';
         if(item === '推荐'){
-            path = '/home/recommend';
+            path = '/recommend';
         }else if(item === '关注'){
-            path = '/home/attention';
+            path = '/attention';
         }else if(item === '热榜'){
-            path = '/home/hot';
+            path = '/hot';
         }
         this.setState({activeMenu:item},()=>{
             this.props.history.push(path);

@@ -9,44 +9,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
-  width: 100%;
-  height: 100%;
-  //font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
-  //font-style: Regular;
-  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
-  letter-spacing: .1em;
-}
-html{
-  background: #f6f6f6;
-}
-body,button,p,pre {
-  margin: 0
-}
-
-h1,h2,h3 {
-  margin: 0;
-  font: inherit
-}
-
-ol,ul {
-  padding: 0;
-  margin: 0
-}
-
-li {
-  list-style-type: none
-}
-
-a {
-  color: inherit;
-  text-decoration: none
-}
-
-p {
-  margin-bottom: 0 !important;
-}
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 $bgColor:#fff;
 
