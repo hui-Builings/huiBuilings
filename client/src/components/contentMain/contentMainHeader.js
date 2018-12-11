@@ -27,7 +27,6 @@ class ContentMainHeader extends Component{
     componentDidMount(){
         const { url } = this.props.match;
         const activeMenu = this.state.menu.filter(item => item.path == url)[0].name;
-        console.log(activeMenu);
         this.setState({activeMenu});
     }
 
