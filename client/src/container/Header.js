@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu,Dropdown } from 'antd'
+import { Menu,Dropdown,Icon } from 'antd'
 import img from '../assert/images/admin.jpg'
 import { Link } from 'react-router-dom';
 import Login from "./Login";
@@ -13,7 +13,7 @@ class Header extends Component{
     constructor(props){
         super(props);
         this.state={
-            mask:true
+            mask:false
         }
     }
 
@@ -26,12 +26,12 @@ class Header extends Component{
 
     render(){
           const login = (
-              <Menu>
+              <Menu className='app-header-li'>
                   <Menu.Item>
-                      <Link to='/myDetail'><span>我的</span></Link>
+                      <Link to='/myDetail'><span><Icon type="user" style={{marginRight:10}}/>我的主页</span></Link>
                   </Menu.Item>
                   <Menu.Item>
-                      <span onClick={()=>this.openMask(true)}>登录</span>
+                      <span onClick={()=>this.openMask(true)}><Icon type="smile"  style={{marginRight:10}}/>登录</span>
                   </Menu.Item>
               </Menu>
           );
@@ -79,6 +79,8 @@ class Header extends Component{
                   {this.state.mask ? <div className='app-mask'>
                       <Login  openMask = {()=>this.openMask(false)}/>
                   </div> : null}
+
+
               </div>
           )
       }
