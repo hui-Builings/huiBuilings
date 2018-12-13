@@ -5,7 +5,7 @@ import img from '../../assert/images/admin.jpg'
 /**
  * @author hui
  * @date 2018/12/11
- * @Description: 我的：关注 | 收藏 | 简介
+ * @Description: 我的：简介 | 动态（全部） | 关注 | 收藏 | 点赞
 */
 class MyDetail extends Component{
     constructor(props){
@@ -14,12 +14,13 @@ class MyDetail extends Component{
 
         }
     }
-  render(){
-      return (
-          <div className="app-my">
-              11111111
-          </div>
-    )
-  }
+
+    render(){
+        return (
+            <div className="app-card app-my">
+                111111111111111111111111111
+            </div>
+      )
+    }
 }
 export default MyDetail;

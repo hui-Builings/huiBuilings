@@ -544,6 +544,7 @@ $opBgColor:#E5F2FF;
                     font-weight: bold;
                     color: $fontColor;
                     font-size: 15px;
+                    margin-bottom: 0;
                     i {
                       color: $themsColor;
                       margin: 0 0 0 3px;
@@ -551,6 +552,7 @@ $opBgColor:#E5F2FF;
                     }
                   }
                   .item-des {
+                    margin-bottom: 0;
                     color: $fontHoverColor;
                   }
                 }
@@ -741,6 +743,9 @@ $opBgColor:#E5F2FF;
                   margin-left: 15px;
                   padding-top: 5px;
                   float: left;
+                  p{
+                    margin-bottom: 0;
+                  }
                   .name {
                     font-size: $fontSize8;
                   }
@@ -788,6 +793,7 @@ $opBgColor:#E5F2FF;
                 border-bottom: 1px solid $borderColor;
                 p {
                   color: #175199;
+                  margin-bottom: 0;
                   span {
                     margin-right: 10px;
                   }
