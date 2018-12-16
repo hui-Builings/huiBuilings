@@ -97,7 +97,7 @@ $opBgColor:#E5F2FF;
       }
       .app-header-logo{
         //padding-top: 10px;
-        margin-right: 20px;
+        margin-right: 120px;
         height: 52px;
         span{
           font-size: $fontSize20;
@@ -838,7 +838,7 @@ $opBgColor:#E5F2FF;
                       color: $fontColor;
                       font-weight: 600;
                       line-height: 18px;
-                      margin-bottom: 10px;
+                      margin-bottom: 10px !important;
                     }
                   }
                 }
