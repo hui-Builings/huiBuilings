@@ -1,41 +1,60 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom'
+import { Switch,Route } from 'react-router-dom';
 
 import Header from "./Header";
+import Login from "./Login";
+
 import ContentMainHome from "../components/contentMain/contentMainHome";
 import ContentMainDetailHome from "../components/contentDetail/contentDetailHome";
+import MyDetail from "../components/my/MyDetail";
 
 /**
  * @author hui
  * @date 2018/12/9
  * @Description: 路由选择
  */
-@withRouter
 class ContentRouterSwitch extends Component{
     constructor(props){
         super(props);
         this.state = {
+            route:[
+                //我的
+                {path:'/myDetail', component:MyDetail},
+
+                //首页-推荐
+                {path:'/recommend', component:ContentMainHome},
+                //关注
+                {path:'/attention', component:ContentMainHome},
+                //热榜
+                {path:'/hot', component:ContentMainHome},
+
+                //推荐-详情
+                {path:'/question/detail/:id', component:ContentMainDetailHome},
+            ]
         }
     }
 
+
+
     render(){
-        const { pathname } = this.props.location;
         return (
-            <div>
-                <Header />
+            <div className=''>
+                {/*header*/}
+                <Header/>
+
                 <div className="app-content">
                     <div className='app-router'>
-                        {/*首页*/}
-                        {pathname === '/home/recommend'? <ContentMainHome name='推荐'/> : null}
-                        {pathname === '/home/attention' ? <ContentMainHome name='关注'/> : null}
-                        {pathname === '/home/hot' ? <ContentMainHome name='热榜'/> : null}
-
-                        {/*发现*/}
-
-                        {/*话题*/}
-
-                        {/*详情*/}
-                        {pathname.split('/:')[0] === '/home/recommend/detail' ? <ContentMainDetailHome /> : null}
+                        {/*路由*/}
+                        <Switch>
+                            {this.state.route.map(item=>{
+                                    return <Route
+                                                key={item.path}
+                                                exact={item.exact ? true:false}
+                                                path={item.path}
+                                                component={item.component}
+                                            />
+                            })}
+                        </Switch>
                     </div>
                 </div>
             </div>

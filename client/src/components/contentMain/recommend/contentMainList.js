@@ -87,7 +87,7 @@ class ContentMainList extends Component{
                       classNames="app-card app-content-main-list-item img-item";
                   }
                   return (
-                      <div className={classNames} key={index} onClick={()=>this.props.history.push(`/home/recommend/detail/:${index}`)}>
+                      <div className={classNames} key={index} onClick={()=>this.props.history.push(`/question/detail/:${index}`)}>
                           <div className="item-label">
                               <span>{item.label.label}: </span>
                               <span className="item-label-title">{item.label.title}</span>

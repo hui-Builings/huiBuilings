@@ -12,32 +12,33 @@ class ContentMainHeader extends Component{
     constructor(props){
         super(props);
         this.state = {
-            menu:['关注','推荐','热榜'],
-            activeMenu: this.props.name
+            menu:[
+                {path:'/recommend', name:'推荐'},
+                {path:'/attention',  name:'关注'},
+                {path:'/hot', name:'热榜'},
+            ],
+            activeMenu: '推荐'
         }
     }
 
+    componentDidMount(){
+        const { url } = this.props.match;
+        const activeMenu = this.state.menu.filter(item => item.path == url)[0].name;
+        this.setState({activeMenu});
+    }
+
     checkRouter = (item)=>{
-        let path = '';
-        if(item === '推荐'){
-            path = '/home/recommend';
-        }else if(item === '关注'){
-            path = '/home/attention';
-        }else if(item === '热榜'){
-            path = '/home/hot';
-        }
-        this.setState({activeMenu:item},()=>{
-            this.props.history.push(path);
+        this.setState({activeMenu:item.name},()=>{
+            this.props.history.push(item.path);
         });
     }
 
     render(){
-        // const { pathname } = this.props.location;
         const { menu, activeMenu }  = this.state;
         const menuList = (
              <Menu>
-                 {menu.filter(item => item !== activeMenu).map(itemT =>{
-                     return <Menu.Item key={itemT} onClick={()=>this.checkRouter(itemT)}><Icon type="tag" /><span>{itemT}</span></Menu.Item>
+                 {menu.filter(item => item.name !== activeMenu).map(itemT =>{
+                     return <Menu.Item key={itemT.path} onClick={()=>this.checkRouter(itemT)}><Icon type="tag" /><span>{itemT.name}</span></Menu.Item>
                  })}
              </Menu>
         );

@@ -19,21 +19,6 @@ $btnBgColor:rgba(0,132,255,.1);
 
 $opBgColor:#E5F2FF;
 
-.fl{
-  float: left;
-}
-
-.fr{
-  float: right;
-}
-
-.div-hide{
-  display: none;
-}
-.div-show{
-  display: inline-block;
-}
-
 @mixin border-radius($radius:2px){
   border-radius: $radius;
   -webkit-border-radius: $radius;
@@ -97,7 +82,7 @@ $opBgColor:#E5F2FF;
       }
       .app-header-logo{
         //padding-top: 10px;
-        margin-right: 120px;
+        margin-right: 130px;
         height: 52px;
         span{
           font-size: $fontSize20;
@@ -107,14 +92,16 @@ $opBgColor:#E5F2FF;
       }
       .app-header-li{
         cursor: pointer;
-        span{
-          display: inline-block;
-          width: 60px;
+        a {
           text-align: left;
           color: $fontColor2;
           font-size: 15px;
-          &.active{
+          &.active {
             color: $fontColor;
+          }
+          span {
+            display: inline-block;
+            width: 60px;
           }
         }
       }
@@ -557,6 +544,7 @@ $opBgColor:#E5F2FF;
                     font-weight: bold;
                     color: $fontColor;
                     font-size: 15px;
+                    margin-bottom: 0;
                     i {
                       color: $themsColor;
                       margin: 0 0 0 3px;
@@ -564,6 +552,7 @@ $opBgColor:#E5F2FF;
                     }
                   }
                   .item-des {
+                    margin-bottom: 0;
                     color: $fontHoverColor;
                   }
                 }
@@ -754,6 +743,9 @@ $opBgColor:#E5F2FF;
                   margin-left: 15px;
                   padding-top: 5px;
                   float: left;
+                  p{
+                    margin-bottom: 0;
+                  }
                   .name {
                     font-size: $fontSize8;
                   }
@@ -801,6 +793,7 @@ $opBgColor:#E5F2FF;
                 border-bottom: 1px solid $borderColor;
                 p {
                   color: #175199;
+                  margin-bottom: 0;
                   span {
                     margin-right: 10px;
                   }
@@ -826,7 +819,7 @@ $opBgColor:#E5F2FF;
                 img {
                   width: 80px;
                   height: 65px;
-                  @include border-radius(2px);
+                  @include border-radius(4px);
                 }
                 .rightBar-recommend-li-r {
                   -webkit-box-flex: 1;
@@ -870,6 +863,70 @@ $opBgColor:#E5F2FF;
 
   /*login*/
   .app-login{
-
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    background: $bgColor;
+    left: 50%;
+    top: 130px;
+    margin-left: -225px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    h2{
+      color: $themsColor;
+      font-size: 33px;
+      text-align: center;
+    }
+    h4{
+      color: $themsColor;
+      font-size: $fontSize20;
+      text-align: center;
+    }
+    .app-login-close{
+      position: fixed;
+      left: 50%;
+      top: 145px;
+      margin-left: 251px;
+      font-size: $fontSize20;
+      color: $bgColor;
+      cursor: pointer;
+    }
+    .app-login-input{
+      padding: 40px 30px;
+      height: 324px;
+      .ant-input{
+        @include border-radius(0);
+        border-width: 0 0 1px 0;
+        margin-bottom: 20px;
+        &:focus,&:hover{
+          box-shadow: none;
+          border-width: 0 0 1px 0 !important;
+        }
+      }
+      .ant-btn{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+        height: 40px;
+        line-height: 40px;
+      }
+      .app-login-forget{
+        text-align: right;
+      }
+    }
+    .app-login-check{
+      background: gainsboro;
+      height: 50px;
+      line-height: 50px;
+      color: $bgColor;
+      text-align: center;
+      font-size: $fontSize8;
+      span{
+        span{
+          color: $themsColor;
+          margin-left: 10px;
+        }
+      }
+    }
   }
 }
